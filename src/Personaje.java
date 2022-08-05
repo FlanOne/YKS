@@ -2,16 +2,22 @@ public class Personaje {
     private int id;
     private String nombre;
     private Ataque [] ataques = new Ataque[4];
+    private int vida;
 
-    Personaje(int id, String nombre, int [] list){
+    Personaje(int id, String nombre, int [] list, int vida){
         this.id = id;
         this.nombre = nombre;
+        this.vida=vida;
 
         for (int i=0; i<list.length; i=i+1){
             ataques[i] = buscador(list[i]);
         }
         
 
+    }
+
+    public int getVida(){
+        return vida;
     }
 
 
