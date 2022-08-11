@@ -28,7 +28,11 @@ public class Personaje {
     public int getId(){
         return id;
     }
-
+    
+    public void setVida(int numero){
+        this.vida = numero;
+    }
+    
     public Ataque buscador(int a)
     {
         Ataque ataque = new Ataque (0, " ", 0, 0); 

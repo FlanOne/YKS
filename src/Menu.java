@@ -26,11 +26,12 @@ public class Menu {
         int op;
         
         System.out.println("Seleccione las opciones que quiere utilizar: ");
-        System.out.println("1 ver el nombre de las habilidades del personaje , 2 ver el id del personaje: ");
+        System.out.println("1 PARA VER QUE SE SAQUEN LA CHUCHA ");
         try{
             op= Integer.parseInt(buffer.readLine() );
             switch(op){
-                case 1: System.out.println(Setup.perso1.devolverAtaques() );
+                case 1: Combate com = new Combate(Setup.perso1 , Setup.perso2); com.SistemaLineal();
+
             }
 
         }catch(IOException e){
